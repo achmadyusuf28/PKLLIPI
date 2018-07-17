@@ -15,23 +15,17 @@ def ambil_pixel(gambar,center,x,y):
         pass
     return new_value
 
-def lbp_histogram1(hist):
+def lbp_histogram(hist):
     histogram=np.zeros(len(hist))
     for i in range(len(hist)):
         histogram[i]=hist[i]
     return histogram
 
-def lbp_histogram2(hist):
-    histogram=np.zeros(6)
+def save_data(data):
+    with open('test.csv'):
+        isi=csv.
 
 def hitung_nilai_lbp(gambar,x,y):
-    '''
-         1  |   2 |   4
-        ----------------
-        128 |   0 |   8
-        ----------------
-         64 |  32 |   16
-        '''
     center=gambar[x][y]
     value=[]
     value.append(ambil_pixel(gambar, center, x-1, y-1))
@@ -53,28 +47,29 @@ def hitung_nilai_lbp(gambar,x,y):
 
     return nilai_lbp
 
-def main(gambar,kelas):
-    img=cv2.imread(gambar);
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    lebar, panjang = gray.shape
+def main(gambar):
+    gray=cv2.imread(gambar,cv2.COLOR_BGR2GRAY);
+    heigh, width = gray.shape
+    hasil=np.zeros((heigh, width),np.uint8)
+    for x in range(len(gray)):
+        for y in range(len(gray[x])):
+            hasil[x, y]=hitung_nilai_lbp(gray, x, y)
+    hist_lbp = cv2.calcHist([hasil], [0], None, [256], [0, 256])
+    hist_jadi_data= lbp_histogram(hist_lbp)
+    masuk_histogram=[i for i in hist_jadi_data]
 
-#testing input
-# img=cv2.imread('anone.jpg')
-# gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-# lebar,panjang=gray.shape
-# print gray
-# print gray[-1][-1]
+    cv2.imshow('test',hasil)
+    cv2.imshow('1',gray)
+    cv2.waitKey(0)
+    print(hasil)
+    cv2.destroyAllWindows()
+    return masuk_histogram
 
-#test ilung lbp2
-img=cv2.imread('anone.jpg')
-gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-lebar,panjang=gray.shape
-print lebar
-print panjang
-hasil=[]
-for x in range(len(gray)):
-    for y in range(len(gray[x])):
-        hasil.append(hitung_nilai_lbp(gray,x,y))
-tulis=open("testing.txt","r+")
-tulis.write(hasil)
-tulis.close()
+# if __name__ == '__main__':
+#     test=[]
+#     test.append(main("1.jpg"))
+#     test.append(main("2.jpg"))
+#     test.append(main("3.jpg"))
+#     print test
+if __name__ == '__main__':
+    main("2.jpg")
