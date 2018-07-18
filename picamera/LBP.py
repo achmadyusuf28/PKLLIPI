@@ -23,7 +23,7 @@ def lbp_histogram(hist):
 
 def save_data(data):
     with open('test.csv'):
-        isi=csv.
+        return
 
 def hitung_nilai_lbp(gambar,x,y):
     center=gambar[x][y]
@@ -48,7 +48,8 @@ def hitung_nilai_lbp(gambar,x,y):
     return nilai_lbp
 
 def main(gambar):
-    gray=cv2.imread(gambar,cv2.COLOR_BGR2GRAY);
+    img=cv2.imread(gambar);
+    gray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
     heigh, width = gray.shape
     hasil=np.zeros((heigh, width),np.uint8)
     for x in range(len(gray)):
@@ -59,7 +60,7 @@ def main(gambar):
     masuk_histogram=[i for i in hist_jadi_data]
 
     cv2.imshow('test',hasil)
-    cv2.imshow('1',gray)
+    cv2.imshow('1',img)
     cv2.waitKey(0)
     print(hasil)
     cv2.destroyAllWindows()
@@ -72,4 +73,4 @@ def main(gambar):
 #     test.append(main("3.jpg"))
 #     print test
 if __name__ == '__main__':
-    main("2.jpg")
+    main("1.jpg")
