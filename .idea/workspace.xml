@@ -12,6 +12,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="LBP.py" pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/LBP.py">
+          <provider selected="true" editor-type-id="text-editor" />
+=======
         <entry file="file://$PROJECT_DIR$/picamera/LBP.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
@@ -33,6 +37,12 @@
               </folding>
             </state>
           </provider>
+>>>>>>> e8db11bcaffcb018ee65353c71f4d927e808117a
+        </entry>
+      </file>
+      <file leaf-file-name="videocapture.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/videocapture.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -50,13 +60,18 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/LBP.py" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/videocapture.py" />
+=======
         <option value="$PROJECT_DIR$/picamera/LBP.py" />
+>>>>>>> e8db11bcaffcb018ee65353c71f4d927e808117a
       </list>
     </option>
   </component>
@@ -70,6 +85,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -86,10 +102,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHubDesktop/app-1.2.6/resources/app/git/cmd/git.exe" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+=======
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
@@ -97,6 +116,7 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Daris\PycharmProjects\PKLLIPI\picamera" />
     </key>
+>>>>>>> e8db11bcaffcb018ee65353c71f4d927e808117a
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -212,13 +232,31 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <frame x="-8" y="22" width="1382" height="754" extended-state="6" />
     <layout>
+<<<<<<< HEAD
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22474378" />
+=======
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17057292" />
+>>>>>>> e8db11bcaffcb018ee65353c71f4d927e808117a
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
+<<<<<<< HEAD
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+=======
       <window_info anchor="bottom" id="Run" order="2" weight="0.25721785" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -231,6 +269,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+>>>>>>> e8db11bcaffcb018ee65353c71f4d927e808117a
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -382,6 +421,10 @@
     <entry file="file://$PROJECT_DIR$/picamera/testing.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/videocapture.py">
+      <provider selected="true" editor-type-id="text-editor" />
+=======
     <entry file="file://$PROJECT_DIR$/LBPTestingv1.0.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -410,6 +453,7 @@
           </folding>
         </state>
       </provider>
+>>>>>>> e8db11bcaffcb018ee65353c71f4d927e808117a
     </entry>
   </component>
 </project>
